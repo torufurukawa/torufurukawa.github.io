@@ -1,0 +1,38 @@
+body {
+  line-height: 1.4em;
+  margin: 1em 2em;
+}
+
+h1 {
+  font-family: font-family: Arial, Helvetica, "ƒqƒ‰ƒMƒmŠpƒS Pro W3", 
+  Osaka, "‚l‚r ‚oƒSƒVƒbƒN", sans-serif;
+  font-size: 200%;
+  font-style: normal;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 120%;
+  font-style: normal;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+img {
+  border-style: solid;
+  border-color: #333;
+  border-width: 1px;
+}
+
+img.email {
+  border-style: none;
+}
+
+address {
+  font-style: normal;
+  font-size: 90%;
+}
+
+p.languagechoice {
+  text-align: right;
+}

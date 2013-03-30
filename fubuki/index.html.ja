@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="ROBOTS" content="NOARCHIVE" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="fubuki.css" media="all" type="text/css" />
+    <title>fubuki.py - S60 で Wiki</title>
+  </head>
+
+  <body>
+    <h1>fubuki.py</h1>
+
+    <p class="languagechoice">Japanese | <a href="index.html.en">English</a></p>
+    <p>fubuki.pyは、Series 60 携帯電話で動作する、Wikiです。Pythonで実装しています。</p>
+
+	<h2>おしらせ</h2>
+	<p>2007-03-21: "List all pages" 機能を、<a href="http://blogru.nikanorov.com/articles/2007/03/13/s60">Andrey Nikanorov さんが追加</a>しました。</p>
+
+
+    <h2>使い方</h2>
+    <ul>
+      <li>Python を起動してオプションの [Run script]&gt;[*/fubuki.py] を選択して起動します。</li>
+      <li>基本的に貧弱なメモ帳です。</li>
+      <li>起動直後は「FrontPage」というページを編集しています。</li>
+      <li>[ ] で囲まれた文字列の上にカーソルを合わせて、セレクトボタンを押すと、新たなファイルを編集できます。たとえば「[hoge]」の上でセレクトボタンを押すと「hoge」ページを編集します。</li>
+      <li>ページを移るときや、アプリケーションを終了するときに、文書は自動的に保存されます。</li>
+    </ul>
+    <div><img src="shot.jpg" /></div>
+
+    <h2>インストール</h2>
+    <ol>
+      <li><a href="http://sourceforge.net/projects/pys60">Python for S60 1.3.1</a> をインストールする（702NK なら PythonForS60_2ndEdFP2_1_3_1.SIS）</li>
+      <li><a href="fubuki-0.2.zip">fubuki-0.2.zip</a> をダウンロードし、解凍する</li>
+      <li>「fubuki.py」ファイルを、Series 60 端末の適当なフォルダに保存する</li>
+      <li>Series 60 端末の、E ドライブに「fubuki」という名前のフォルダを作る。</li>
+      <li>Series 60 端末のファイルマネージャなどで「fubuki.py」を開き、[Install as]&gt;[Python script] を選択する</li>
+    </ol>
+
+    <address>ふるかわとおる<br /><img class="email" src="email.png" alt="email address" /></address>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+body {
+	color: #000000;
+	background: FCFCFC;
+	margin: 0 0 1em;
+}
+
+a {
+	color: #0000AA;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+div.banner {
+	color: #FCFCFC;
+	background: #223377;
+	margin: 0;
+	padding: 0.5em;
+	font-size:150%;
+}
+
+
+div.menu {
+	color: #FCFCFC;
+	background: #445599;
+	margin: 0;
+	padding: 0.2em 1em;
+	border-style: solid none;
+	border-width: 1px 0;
+	border-color: EEEEFC;
+}
+
+div.menu a {
+	color: #FCFCFC;
+	background: transparent;
+	padding: 0.2em;
+	margin: 0;
+}
+
+div.menu span.this {
+	color: #FCFCFC;
+	background: #6677BB;
+	font-weight: bold;
+	padding: 0.2em;
+	margin: 0;
+}
+
+
+div.content {
+	margin: 2em;
+}
+
+div.date, div.title{
+	margin: 0 0 1em;
+	font-weight: bold;
+}
+
+div.article p {
+	line-height: 1.4;
+}
+
+
+ul.archive li {
+	line-height: 1.4em;
+}
+
+ul.archive a {
+	color: 000099;
+	background: transparent;
+	font-weight: normal;
+}
+
+address {
+	font-size: 90%;
+	margin: 1em;
+	text-align: right;
+	font-style: normal;
+}

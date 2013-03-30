@@ -1,0 +1,121 @@
+﻿<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="jsmigemo-version" content="0.5" />
+    <title>JavaScript/Migemo</title>
+    <script language="javascript" src="migemo/migemo.js"></script>
+    <script language="javascript">
+      migemo.initialize("migemo");
+      function showPattern() {
+        document.myForm.result.value = migemo.query(document.myForm.input.value);
+      }
+    </script>
+    <style>
+      body {
+        color: #530;
+        background: #fec;
+        font-family:sans-serif;
+        line-height:1.4em;
+        margin: 0em;
+      }
+      div#content {margin: 1em;}
+      h1 {
+        color:#630;
+        background:#d60;
+        font-family: monospace;
+        font-size: 200%;
+        font-weight: normal;
+        padding: 1em 0.5em;
+        margin: 0em;
+        border-style: none none solid;
+        border-width: 0 0 1px;
+        border-color: #630;
+      }
+      h2 {
+        color:#630;
+        background: transparent;
+        font-family:sans-serif; font-size:120%; font-weight:bold;
+        border-style:none none solid; border-width:0 0 1px; border-color:#fc9;
+        padding: 0.2em;
+      }
+      input.entry {
+        border-width:1px; border-style:solid; border-color:#963;
+        color:#333; background:#fff9f0;
+        margin:0.2em;
+        padding:0.2em;
+      }
+      a {
+        color:#960;
+        background:transparent;
+        text-decoration:none;
+        border-style: none none dashed;
+        border-width: 0 0 1px;
+      }
+      a:hover {color:#da0; background:transparent;}
+      address {
+        border-style:solid none none; border-width:1px 0 0; border-color:#fc9;
+        padding: 0.2em; margin: 2em 0em 1em;
+        font-style:normal; text-align:right;
+      }
+      pre {
+        margin: 0.5em 4em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript/Migemo</h1>
+    <div id="content">
+      <h2>能書き</h2>
+      <p><a href="http://0xcc.net/migemo/">Migemo</a>を JavaScript で書こうという試みです。</p>
+
+      <h2>更新履歴</h2>
+      <ul>
+	<li><a href="http://oldriver.org/blog/jsmigemo/index.html">ブログ</a></li>
+	<li>2006-03-13: Version 0.6: 「n」で終わるときのかな候補を修正 / 辞書のパスを自由に指定できるように変更</li>
+	<li>2006-03-12: Version 0.5: migemoQuery() から migemo.query() に関数名変更。内部で使用する関数名も _migemo.func のように変更。</li>
+	<li>2006-01-02: Internet Explorer で動作しなかったバグの修正コードをいただいたので、そのまま使う。</li>
+	<li>2005-04-??: 最初の版を公開。</li>
+      </ul>
+    
+      <h2>使い方</h2>
+      <pre>migemo.query("hay");</pre>
+      <p>は、以下のような文字列を返します。辞書が充実していれば、もっと色々候補が出てきます。</p>
+      <pre>[早林速隼]|hay|は(や|ゆ|よ)|ハ(ヤ|ユ|ヨ)|流行</pre>
+
+      <h2>デモ</h2>
+      <form name="myForm" action="javascript:;">
+	<input class="entry" name="input" onkeyup="showPattern();" />←ローマ字入力<br />
+	<input class="entry" name="result" size="80" />
+      </form>
+
+      <!-- webonly -->
+      <h2>ダウンロード</h2>
+      <p><a href="jsmigemo-0.6.zip">jsmigemo-0.6.zip</a></p>
+      <!-- /webonly -->
+
+      
+
+      <h2>懸案事項</h2>
+      <ul>
+	<li>computer => コンピュータ,コンピューター</li>
+	<li>半角/全角変換</li>
+	<li>(あ|い|う|え|お) => [あいうえお]</li>
+	<li>連文節変換</li>
+	
+      </ul>
+
+      <h2>関連リンク</h2>
+      <ul>
+	<li><a href="http://0xcc.net/migemo/">Migemo</a><br />Ruby で実装された、本家 Migemo。核になる部分を、ほとんど丸写ししました。</li>
+	<li><a href="http://www.kaoriya.net/#CMIGEMO">C/Migemo</a><br />C 言語で実装された Migemo。</li>
+	<li><a href="http://tkm.s31.xrea.com/xul/xulmigemo.shtml">XUL/Migemo Project</a><br />XUL を使って、Mozilla で Migemo を使えるようにするプロジェクト。辞書まわりを参考にしました。</li>
+      </ul>
+
+    </div>
+    <address>
+      <a href="http://oldriver.org/jsmigemo/">JavaScript/Migemo</a>, ふるかわとおる &lt;toru あっと oldriver どっと org&gt;
+    </address>
+  </body>
+</html>
+
+
