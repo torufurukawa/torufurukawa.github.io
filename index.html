@@ -25,8 +25,8 @@ title: Home
 <ul>
   {% for post in site.posts limit:5 %}
   <li>
+    {{ post.date | date: "%Y-%m-%d"}}
     <a href="{{ post.url }}">{{ post.title }}</a>
-    - {{ post.date | date: "%Y-%m-%d"}}
   </li>
   {% endfor %}
 </ul>
