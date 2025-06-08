@@ -3,5 +3,5 @@ description: 個人ブログとポートフォリオ
 baseurl: ""
 url: "https://torufurukawa.github.io"
 
-theme: null
+theme: jekyll-theme-minimal
 markdown: kramdown
