@@ -1,55 +1,39 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Toru Furukawa</title>
-    <style>
-      body {
-        font-family: sans-serif;
-        max-width: 600px;
-        margin: 2rem auto;
-        padding: 1rem;
-        line-height: 1.6;
-      }
-      h1 {
-        font-size: 2rem;
-      }
-      a {
-        color: #0366d6;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Toru Furukawa</h1>
-    <p>ソリューションエンジニア。エッセイやブログも書きます。</p>
+---
+layout: default
+title: Home
+---
 
-    <h2>リンク</h2>
-    <ul>
-      <li><a href="https://twitter.com/torufurukawa">Twitter （現X）</a></li>
-      <li><a href="https://zenn.dev/toruf">Zenn</a></li>
-    </ul>
+<h1>Toru Furukawa</h1>
+<p>ソリューションエンジニア。エッセイやブログも書きます。</p>
 
-    <h2>古川桃流</h2>
-    <ul>
-      <li><a href="https://touru-f.ink">古川桃流ブログ</a></li>
-      <li>
-        <a href="https://note.com/tfurukawa">note</a>
-      </li>
-      <li><a href="https://kakuyomu.jp/users/torufurukawa">カクヨム</a></li>
-    </ul>
+<h2>リンク</h2>
+<ul>
+  <li><a href="https://twitter.com/torufurukawa">Twitter （現X）</a></li>
+  <li><a href="https://zenn.dev/toruf">Zenn</a></li>
+</ul>
 
-    <h2>過去のブログ</h2>
-    <ul>
-      <li><a href="https://note.com/torufurukawa">note</a></li>
-      <li>
-        <a href="https://medium.com/@torufurukawa">Medium</a>
-      </li>
-      <li><a href="http://torufurukawa.blogspot.com">Addicted</a></li>
-    </ul>
-  </body>
-</html>
+<h2>古川桃流</h2>
+<ul>
+  <li><a href="https://touru-f.ink">古川桃流ブログ</a></li>
+  <li>
+    <a href="https://note.com/tfurukawa">note</a>
+  </li>
+  <li><a href="https://kakuyomu.jp/users/torufurukawa">カクヨム</a></li>
+</ul>
+
+<h2>過去のブログ</h2>
+<ul>
+  {% for post in site.posts limit:5 %}
+  <li>
+    {{ post.date | date: "%Y-%m-%d"}}
+    <a href="{{ post.url }}">{{ post.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+<ul>
+  <li><a href="https://note.com/torufurukawa">note</a></li>
+  <li>
+    <a href="https://medium.com/@torufurukawa">Medium</a>
+  </li>
+  <li><a href="http://torufurukawa.blogspot.com">Addicted</a></li>
+</ul>

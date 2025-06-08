@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <main>
+      {% unless page.path == "index.html" %}
+      <p><a href="/">← トップページへ</a></p>
+
+      {% if page.title %}
+      <h1>{{ page.title }}</h1>
+      {% endif %} {% if page.date %}
+      <p>
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: "%Y-%m-%d" }}
+        </time>
+      </p>
+      {% endif %} {% endunless %} {{ content }}
+    </main>
+  </body>
+</html>

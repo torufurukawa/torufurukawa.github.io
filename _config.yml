@@ -1,0 +1,7 @@
+title: Toru Furukawa
+description: 個人ブログとポートフォリオ
+baseurl: ""
+url: "https://torufurukawa.github.io"
+
+theme: null
+markdown: kramdown
