@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "よく冷えた安心"
 date: 2025-07-26
 ---
